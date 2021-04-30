@@ -16,13 +16,6 @@ surface.CreateFont( "TheaterInfoMedium", {
 	antialias = true
 })
 
-function ENT:Initialize()
-
-	local bound = Vector(1,1,1) * 1024
-	self:SetRenderBounds( -bound, bound )
-
-end
-
 function ENT:Draw()
 	self:DrawModel()
 end
